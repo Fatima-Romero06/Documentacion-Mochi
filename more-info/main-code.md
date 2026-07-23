@@ -1,3 +1,4 @@
+```c++
 //Robot specifications:
 // 4 IR sensors
 // 2 QTR sensors
@@ -122,3 +123,4 @@ void loop() {
     }
   }
 }
+```
