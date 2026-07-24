@@ -17,15 +17,17 @@ Este modelo de MOCHI se fundamenta en el diseño mecánico y la estructura CAD, 
 
 El robot se subdivide de la siguiente manera:
 
-- **Chasis:** Consiste en una sola pieza de impresión 3D, dejando el espacio correspondiente a la placa de latón debajo del mismo, al igual que el espacio correspondiente a cada componente de la electrónica.
+- **Chasis:** Consiste en una sola pieza de impresión 3D, dejando el espacio correspondiente a la placa de latón debajo del mismo, al igual que el espacio correspondiente a cada componente de la electrónica y proporciona el ángulo de la navaja.
 - **Electrónica:** PCB, sensores infrarrojos (IR), sensores de línea (QTR), motores y pila de lítio (Lipo).
 - **Piezas maquinadas:** Placa de latón de 1/4" (maquinada en fresadora) y fleje de acero al carbono (corte láser).
 - **Tornillería:** Tornillería M3 para la fijación de componentes electrónicos y piezas maquinadas.
+- **Llantas:** Rines y llanta de silicón
 
 ---
 
 ## Chasis y Piezas Maquinadas
 
+<div align="center">
 
 <img width="435" height="355" alt="image" src="https://github.com/user-attachments/assets/59ac6c6a-f4bd-40d9-9dff-c355fa9853ea" />
 
@@ -34,6 +36,8 @@ El robot se subdivide de la siguiente manera:
 <img width="410" height="260" alt="image" src="https://github.com/user-attachments/assets/15cf89d3-6a2d-4235-a190-d3a7e1f1571c" />
 
 <img width="405" height="260" alt="image" src="https://github.com/user-attachments/assets/369c0913-5af7-4493-bba4-2af40ca463d2" />
+
+</div>
 
 > [!NOTE]
 > El chaflán en la parte posterior de la placa de latón tiene como objetivo reducir la altura de la placa para que pueda colocarse lo más adelante posible debajo del chasis impreso y concentrar el peso ahí.
@@ -44,7 +48,11 @@ El robot se subdivide de la siguiente manera:
 > [!NOTE]
 > El soporte de la PCB es parte del chasis, simplemente para colocarla sobre el. **Área de mejora: adaptar el diseño para hacer una tapa para la PCB que se pueda atornillar.**
 
+<div align="center">
+
 <img width="373" height="241" alt="image" src="https://github.com/user-attachments/assets/866f3937-f7df-4271-8c88-1e63725b4aec" />
+
+</div>
 
 > [!NOTE]
 > La navaja se encuentra adherida a la impresión 3D, en la cual el borde es redondeado, esto con la finalidad de que la impresión se dañe lo menor posible, así como un mejor posicionamiento de la(s) navaja(s).
@@ -66,5 +74,40 @@ El robot se subdivide de la siguiente manera:
 | JS04F Digital distance sensor | 4 | 4 g | Detecta objetos desde 40 cm · 3.3 V a 5 V (15 mA) · Cable de 15 cm · 12.5 x 17.7 x 11.5 mm |
 | Core Dc Motor JS16661 | 2 | 21 g | 6 V (120 mA) · 750 RPM  ·  (hasta 15 V)  · Corriente stall 3.5 A |
 | QTR-1RC Infrared Sensor | 2 | NA |  5 V, 20-25 mA · 7.62 x 12.7 x 2.54 mm |
-| PCB XMotion V3 | 1 | 13 g | Controlador · 80 x 30 x 7 mm · [`XMotion-V3.md`](/electronics/XMotion-V3.md)
+| PCB XMotion V3 | 1 | 13 g | Controlador · 80 x 30 x 7 mm · [`XMotion-V3.md`](/electronics/XMotion-V3.md) |
+| Batería LiPo TATTU | 1 | 45 g | 3s, 11.1 V · 95 C · 21 x 18.5 x 63 mm |
+| Cable 22 AWG / 26 AWG | NA | NA | Cable flexible de silicón en motores y sensores |
+
+> [!NOTE]
+> La batería LiPo utilizada en compentencia fue de 800 mAh de 2 celdas, esto debido a que la batería de 550 mAh de 3 celdas mandaba demasiado voltaje a los sensores infrarrojos, lo que causaba comportamientos irregulares en las rutinas por la detección en esos niveles de voltaje. Entre más voltaje se les suministre, detectarán a mayor distancia, lo que puede llegar a ser contraproducente en una estrategia para minisumo autónomo. Es por ello que se recomienda usar una de 2 celdas.
+
+---
+
+## Tornillería
+
+| Componente | Cantidad | Descripción |
+| :--- | :---: | :--- |
+| Tornillo M3 con cabeza avellanada | 2 | Sujeción del fleje |
+| Tornillo M3 con cabeza hueca hexagonal | 4 | Fijación de motores |
+
+---
+
+## Llantas
+
+<div align="center">
+  
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/e306e5dc-8f74-47dd-9e0c-5cd5e2d73881" />
+
+<img width="360" height="300" alt="image" src="https://github.com/user-attachments/assets/0598893a-878a-4a04-b523-187bb1e8f0ef" />
+
+</div>
+
+---
+
+| Componente | Cantidad | Peso | Especificaciones |
+| :--- | :---: | :---: | :--- |
+|JS2622S Steel-Silicone Wheel | 2 | 22 g c/u | Con orificio de 3 mm · diámetro de 26.5 mm · (grosor 22 mm) · Tornillos de fijación M4 allen (x2) | 
+
+> [!NOTE]
+> Aquí la tracción es súper importante. Para que el robot sea más difícil de mover o arrastrar en el dohyo, las llantas (en especial la parte de silicón) debe tener muy buena adherencia y tras cada match deben limpiarse con una cinta y luego con alcohol isopropílico como parte de su mantenimiento.
 
