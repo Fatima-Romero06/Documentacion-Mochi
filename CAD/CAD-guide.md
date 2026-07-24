@@ -66,5 +66,5 @@ El robot se subdivide de la siguiente manera:
 | JS04F Digital distance sensor | 4 | 4 g | Detecta objetos desde 40 cm · 3.3 V a 5 V (15 mA) · Cable de 15 cm · 12.5 x 17.7 x 11.5 mm |
 | Core Dc Motor JS16661 | 2 | 21 g | 6 V (120 mA) · 750 RPM  ·  (hasta 15 V)  · Corriente stall 3.5 A |
 | QTR-1RC Infrared Sensor | 2 | NA |  5 V, 20-25 mA · 7.62 x 12.7 x 2.54 mm |
-| PCB XMotion V3 | 1 | 13 g | Controlador · 80 x 30 x 7 mm · [`electronics-info.md`](/electronics/electronics-info.md)
+| PCB XMotion V3 | 1 | 13 g | Controlador · 80 x 30 x 7 mm · [`XMotion-V3.md`](/electronics/XMotion-V3.md)
 
